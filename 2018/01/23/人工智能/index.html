@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="书籍：数学知识以下是你开始学习AI需要了解的非常基本的数学概念： 微积分学 Khan Academy Calculus videos-可汗学院微积分视频  MIT lectures on Multivariable Calculus（MIT关于多变量微积分的讲座）  微积分 Paper   线性代数 Khan Academy Linear Algebra videos（可汗学院线性代数视频）  M">
+<meta property="og:type" content="article">
+<meta property="og:title" content="人工智能">
+<meta property="og:url" content="http://yoursite.com/2018/01/23/人工智能/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="书籍：数学知识以下是你开始学习AI需要了解的非常基本的数学概念： 微积分学 Khan Academy Calculus videos-可汗学院微积分视频  MIT lectures on Multivariable Calculus（MIT关于多变量微积分的讲座）  微积分 Paper   线性代数 Khan Academy Linear Algebra videos（可汗学院线性代数视频）  M">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-02-13T08:26:35.381Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="人工智能">
+<meta name="twitter:description" content="书籍：数学知识以下是你开始学习AI需要了解的非常基本的数学概念： 微积分学 Khan Academy Calculus videos-可汗学院微积分视频  MIT lectures on Multivariable Calculus（MIT关于多变量微积分的讲座）  微积分 Paper   线性代数 Khan Academy Linear Algebra videos（可汗学院线性代数视频）  M">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/01/23/人工智能/">
+
+
+
+
+
+  <title>人工智能 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/23/人工智能/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kunnneg">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">人工智能</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-23T09:33:31+08:00">
+                2018-01-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="书籍："><a href="#书籍：" class="headerlink" title="书籍："></a>书籍：</h4><h4 id="数学知识"><a href="#数学知识" class="headerlink" title="数学知识"></a>数学知识</h4><p>以下是你开始学习AI需要了解的非常基本的数学概念：</p>
+<h5 id="微积分学"><a href="#微积分学" class="headerlink" title="微积分学"></a>微积分学</h5><ul>
+<li><p><a href="http://www.youtube.com/playlist?list=PL19E79A0638C8D449" target="_blank" rel="noopener">Khan Academy Calculus videos-可汗学院微积分视频</a></p>
+</li>
+<li><p><a href="http://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/index.htm" target="_blank" rel="noopener">MIT lectures on Multivariable Calculus（MIT关于多变量微积分的讲座）</a></p>
+</li>
+<li><p><a href="http://tutorial.math.lamar.edu/getfile.aspx?file=B,41,N" target="_blank" rel="noopener">微积分 Paper</a></p>
+</li>
+</ul>
+<h5 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h5><ul>
+<li><p><a href="http://www.youtube.com/playlist?list=PLFD0EB975BA0CC1E0" target="_blank" rel="noopener">Khan Academy Linear Algebra videos（可汗学院线性代数视频）</a></p>
+</li>
+<li><p><a href="http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/" target="_blank" rel="noopener">MIT linear algebra videos by Gilbert Strang（Gilbert Strang的MIT线性代数视频）</a></p>
+</li>
+<li><p><a href="https://cs.brown.edu/video/channels/coding-matrix-fall-2014/?page=2" target="_blank" rel="noopener">Coding the Matrix （编码矩阵） - 布朗大学线程代数CS课程</a></p>
+</li>
+<li><p><a href="https://minireference.com/static/tutorials/linear_algebra_in_4_pages.pdf" target="_blank" rel="noopener">线性代数-Paper</a></p>
+</li>
+</ul>
+<h5 id="概率和统计"><a href="#概率和统计" class="headerlink" title="概率和统计"></a>概率和统计</h5><ul>
+<li><a href="http://www.youtube.com/playlist?list=PLC58778F28211FA19" target="_blank" rel="noopener">可汗学院 Probability（概率视频</a></li>
+<li><a href="http://www.youtube.com/playlist?list=PL1328115D3D8A2566" target="_blank" rel="noopener">可汗学院 Statistics（统计）视频</a></li>
+<li><a href="https://www.edx.org/course/introduction-probability-science-mitx-6-041x#.VJfS2LQAKc" target="_blank" rel="noopener">edx probability course （edx概率课程）</a></li>
+<li><a href="http://www.wzchen.com/s/probability_cheatsheet.pdf" target="_blank" rel="noopener">概率学-Paper</a></li>
+<li><a href="http://web.mit.edu/~csvoss/Public/usabo/stats_handout.pdf" target="_blank" rel="noopener">统计学-Paper</a></li>
+</ul>
+<h5 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h5><ul>
+<li><a href="http://www.julyedu.com/video/play/38" target="_blank" rel="noopener">七月算法-机器学习中的数学</a></li>
+</ul>
+<h4 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h4><ul>
+<li><a href="http://open.163.com/special/opencourse/machinelearning.html" target="_blank" rel="noopener">斯坦福大学公开课 ：机器学习课程</a> </li>
+</ul>
+<h4 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h4><ul>
+<li><a href="https://github.com/exacity/deeplearningbook-chinese" target="_blank" rel="noopener">deeplearningbook-chinese</a></li>
+</ul>
+<h4 id="CoreML："><a href="#CoreML：" class="headerlink" title="CoreML："></a>CoreML：</h4><ul>
+<li><a href="http://www.jianshu.com/p/1df8ac6af865" target="_blank" rel="noopener">Core ML 与 Vision：iOS 11 机器学习教程</a></li>
+<li><a href="http://yulingtianxia.com/blog/2017/06/19/Core-ML-and-Vision-Framework-on-iOS-11/?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="noopener">Core ML and Vision Framework on iOS 11</a></li>
+<li><a href="https://www.jiqizhixin.com/articles/d49f994b-78e8-4028-b2e1-2e3412086be9" target="_blank" rel="noopener">详解苹果Core ML：如何为iOS创建机器学习应用</a></li>
+</ul>
+<ul>
+<li><a href="https://github.com/alexsosn/iOS_ML#coreml" target="_blank" rel="noopener">iOS_ML</a></li>
+</ul>
+<h4 id="其他推荐系列"><a href="#其他推荐系列" class="headerlink" title="其他推荐系列"></a>其他推荐系列</h4><ul>
+<li><a href="https://github.com/alexsosn/iOS_ML#coreml" target="_blank" rel="noopener">iOS_ML</a></li>
+<li><a href="https://github.com/owainlewis/awesome-artificial-intelligence#code" target="_blank" rel="noopener">awesome-artificial-intelligence</a></li>
+<li><a href="https://github.com/a16z/ai" target="_blank" rel="noopener">AI</a></li>
+</ul>
+<h4 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h4><ul>
+<li><a href="https://github.com/ahmetws/UnsplashExplorer-CoreML" target="_blank" rel="noopener">UnsplashExplorer-CoreML</a></li>
+<li><a href="https://github.com/yulingtianxia/Core-ML-Sample" target="_blank" rel="noopener">Core-ML-Sample</a></li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/02/13/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">kunnneg</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#书籍："><span class="nav-number">1.</span> <span class="nav-text">书籍：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数学知识"><span class="nav-number">2.</span> <span class="nav-text">数学知识</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#微积分学"><span class="nav-number">2.1.</span> <span class="nav-text">微积分学</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#线性代数"><span class="nav-number">2.2.</span> <span class="nav-text">线性代数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#概率和统计"><span class="nav-number">2.3.</span> <span class="nav-text">概率和统计</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其他"><span class="nav-number">2.4.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#机器学习"><span class="nav-number">3.</span> <span class="nav-text">机器学习</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#深度学习"><span class="nav-number">4.</span> <span class="nav-text">深度学习</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CoreML："><span class="nav-number">5.</span> <span class="nav-text">CoreML：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他推荐系列"><span class="nav-number">6.</span> <span class="nav-text">其他推荐系列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#项目"><span class="nav-number">7.</span> <span class="nav-text">项目</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kunnneg</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
